@@ -1,0 +1,142 @@
+<!DOCTYPE>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>JS实现点击表头表格自动排序（含数字、字符串、日期）</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	</head>
+	<body>
+		<div class="container-fluid">
+			<table class="table table-condensed table-bordered table-responsive table-hover">
+				<thead>
+					<tr class="info">
+						<th data-type="string">康复训练(子领域)</th>
+						<th data-type="string">游戏训练</th>
+						<th data-type="string">一级标签</th>
+						<th data-type="num">推荐次数</th>
+						<th data-type="num">使用推荐次数(首次)</th>
+						<th data-type="num">使用推荐比</th>
+						<th data-type="string">状态</th>
+						<th class="disabled">难度跳转</th>
+						<th data-type="num">最高难度推荐次数(达到向上跳转正确率)</th>
+						<th data-type="num">训练推荐次数</th>
+						<th data-type="num">修改记录</th>
+						<th data-type="string">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>动宾词组</td>
+						<td>看一看，找一找</td>
+						<td>音强分辨</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>已删除不可推荐</td>
+						<td>
+							<a href="javascript:;">查看</a>
+						</td>
+						<td>4</td>
+						<td>无</td>
+						<td>
+							<a href="javascrip:;">25</a>
+						</td>
+						<td>
+							<a href="javascript:;">删除</a>
+							<a href="javascript:;">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>f动宾词组</td>
+						<td>看一看，找一找</td>
+						<td>音强分辨</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>已删除不可推荐</td>
+						<td>
+							<a href="javascript:;">查看</a>
+						</td>
+						<td>4</td>
+						<td>无</td>
+						<td>
+							<a href="javascrip:;">25</a>
+						</td>
+						<td>
+							<a href="javascript:;">删除</a>
+							<a href="javascript:;">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>数字多少</td>
+						<td>快乐农场</td>
+						<td>听觉能力</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>已删除不可推荐</td>
+						<td>
+							<a href="javascript:;">查看</a>
+						</td>
+						<td>8</td>
+						<td>无</td>
+						<td>
+							<a href="javascrip:;">1</a>
+						</td>
+						<td>
+							<a href="javascript:;">删除</a>
+							<a href="javascript:;">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>生活事物</td>
+						<td>生活事物</td>
+						<td>音强分辨</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>未设置标签，无法推荐</td>
+						<td>
+							<a href="javascript:;">查看</a>
+						</td>
+						<td>12</td>
+						<td>无</td>
+						<td>
+							<a href="javascrip:;">1</a>
+						</td>
+						<td>
+							<a href="javascript:;">设置</a>
+							<a href="javascript:;">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>啊数字多少</td>
+						<td>快乐农场</td>
+						<td>听觉能力</td>
+						<td>5</td>
+						<td>16</td>
+						<td>71</td>
+						<td>已删除不可推荐</td>
+						<td>
+							<a href="javascript:;">查看</a>
+						</td>
+						<td>48</td>
+						<td>无</td>
+						<td>
+							<a href="javascrip:;">1</a>
+						</td>
+						<td>
+							<a href="javascript:;">删除</a>
+							<a href="javascript:;">删除</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script src="js/sort.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			sort("table")
+		</script>
+	</body>
+</html>
